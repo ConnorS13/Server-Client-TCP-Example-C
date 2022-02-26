@@ -1,1 +1,3 @@
 # Server-Client-TCP-Example-C
+
+This program uses a server and client file running in two different instances. The server file is ran first, and then connects to the client file after it is executed. Commands are input into the client's terminal and are passed through a socket to the server side. The server then processes that request, and sends any information needed back to the client. For example, the input of "get filename" would be sent to the server, and the server would search the server's current directory for a file called "filename" then open a file for mode "write" on the client, and copy the contents of server's "filename" into the client's newly opened file.
